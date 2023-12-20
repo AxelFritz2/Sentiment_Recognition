@@ -17,3 +17,5 @@ else
 
     echo "Environnement virtuel créé avec succès."
 fi
+
+chmod x+
