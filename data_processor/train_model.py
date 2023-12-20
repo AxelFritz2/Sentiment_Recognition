@@ -70,7 +70,7 @@ earlystop = EarlyStopping(monitor='val_accuracy',
 classifier.fit(training_set, epochs=2, validation_data=test_set, callbacks=[earlystop])
 print("model trained ✅")
 
-model_path = "./model.h5"
+model_path = "../data/model.h5"
 classifier.save(model_path)
 print("model saved ✅")
 

@@ -7,7 +7,7 @@ import numpy as np
 import streamlit as st
 from keras.models import load_model
 
-classifier = load_model('./model.h5')
+classifier = load_model('..data/model.h5')
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 def predict(img_path, model):
