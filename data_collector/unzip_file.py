@@ -3,7 +3,7 @@ import os
 
 # Chemins
 fichier_zip = "face-expression-recognition-dataset.zip"
-destination = "../data/"
+destination = "./data/"
 
 
 with zipfile.ZipFile(fichier_zip, 'r') as zip_ref:

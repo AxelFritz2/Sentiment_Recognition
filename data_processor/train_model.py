@@ -14,19 +14,21 @@ train_datagen = ImageDataGenerator(rescale=1. / 255,
 
 test_datagen = ImageDataGenerator(rescale=1. / 255)
 
-training_set = train_datagen.flow_from_directory(directory='data/images/train',
+training_set = train_datagen.flow_from_directory(directory='./data/images/train',
                                               target_size=(48, 48),
                                               class_mode='categorical',
                                               batch_size=32,
-                                              classes=['Angy', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad',
-                                                                  'Surprise'])
+                                              classes=['Angy', 'Disgust', 'Fear',
+                                                       'Happy', 'Neutral', 'Sad',
+                                                       'Surprise'])
 
-test_set = test_datagen.flow_from_directory(directory='data/images/validation',
+test_set = test_datagen.flow_from_directory(directory='./data/images/validation',
                                             target_size=(48, 48),
                                             class_mode='categorical',
                                             batch_size=32,
-                                            classes=['Angy', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad',
-                                                             'Surprise'])
+                                            classes=['Angy', 'Disgust', 'Fear',
+                                                     'Happy', 'Neutral', 'Sad',
+                                                     'Surprise'])
 
 print("Training et test dataset initalized ✅")
 
@@ -70,7 +72,8 @@ earlystop = EarlyStopping(monitor='val_accuracy',
 classifier.fit(training_set, epochs=2, validation_data=test_set, callbacks=[earlystop])
 print("model trained ✅")
 
-model_path = "../data/model.h5"
+model_path = "./data/model.h5"
 classifier.save(model_path)
+
 print("model saved ✅")
 

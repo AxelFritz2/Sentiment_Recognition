@@ -7,7 +7,7 @@ import numpy as np
 import streamlit as st
 from keras.models import load_model
 
-classifier = load_model('..data/model.h5')
+classifier = load_model('./data/model.h5')
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 def predict(img_path, model):
@@ -24,7 +24,7 @@ def predict(img_path, model):
 
 def random_img(chosen_class:str):
     class_names = ["Angry", "Disgust", "Fear", "Happy", "Neutral", "Sad", "Surprise"]
-    root_dir = ".data/images/validation"
+    root_dir = "./data/images/validation"
 
     if chosen_class == 'random' :
         chosen_class = random.choice(class_names)
