@@ -1,13 +1,13 @@
-FROM ubuntu:20.04
+FROM python:3.10-buster
 
-RUN apt-get update && \
-    apt-get install -y python3 python3-pip virtualenv
-
-RUN mkdir -p Projet_Linux
+RUN mkdir -p /Projet_Linux
 
 WORKDIR /Projet_Linux
 
 COPY . .
+
+RUN apt-get update && \
+    apt-get install -y <autres dépendances nécessaires>
 
 RUN bash ./install.sh
 
