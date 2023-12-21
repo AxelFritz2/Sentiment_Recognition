@@ -2,6 +2,8 @@ import subprocess
 from flask import Flask, jsonify
 import os
 
+os.environ["KAGGLE_CONFIG_DIR"] = "../kaggle.json"
+
 app = Flask(__name__)
 
 @app.route('/download_data', methods=['GET'])
