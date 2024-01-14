@@ -7,4 +7,4 @@ source ./venv/bin/activate
 python3 ./data_collector_2/collect.py
 
 mkdir "./data"
-mv './face-expression-recognition-dataset' './data'
+mv './data_collector_2/face-expression-recognition-dataset' './data'
