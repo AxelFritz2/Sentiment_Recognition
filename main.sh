@@ -1,7 +1,7 @@
 echo "******************* Initialisation de l'application *******************"
 source ./venv/bin/activate
 echo "******************* Collecte des données *******************"
-bash ./data_collector/collect_data.sh
+bash ./data_collector_2/collect_data.sh
 echo "******************* Données collectées *******************"
 
 echo "******************* Entraînement du modèle *******************"
