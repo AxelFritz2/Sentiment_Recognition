@@ -11,10 +11,6 @@ RUN apt-get update && \
     python3 -m pip install --upgrade pip && \
     python3 -m pip install virtualenv \
 
-RUN mkdir ~/.kaggle
-RUN mv ./kaggle.json ~/.kaggle/
-RUN chmod 600 ~/.kaggle/kaggle.json
-
 RUN bash ./install.sh
 
 CMD bash main.sh
