@@ -4,7 +4,9 @@ echo "******************* Collecte des données *******************"
 bash ./data_collector_2/collect_data.sh
 echo "******************* Données collectées *******************"
 
+cd data
 ls
+cd ..
 
 echo "******************* Entraînement du modèle *******************"
 bash ./data_processor/train_model.sh
