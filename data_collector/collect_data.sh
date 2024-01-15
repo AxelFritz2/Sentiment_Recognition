@@ -1,6 +1,10 @@
 #!/bin/bash
 
-(bash ./data_collector/start_server.sh) &
-(sleep 5 ; bash ./data_collector/download_data.sh)
+# Activer l'environnement virtuel
+source ./venv/bin/activate
 
-python3 ./data_collector/unzip_file.py
+# Exécuter le serveur Flask
+python3 ./data_collector/collect.py
+
+mkdir "data"
+mv face-expression-recognition-dataset data

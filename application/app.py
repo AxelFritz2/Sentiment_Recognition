@@ -24,7 +24,7 @@ def predict(img_path, model):
 
 def random_img(chosen_class:str):
     class_names = ["Angry", "Disgust", "Fear", "Happy", "Neutral", "Sad", "Surprise"]
-    root_dir = "./data/images/validation"
+    root_dir = "./data/face-expression-recognition-dataset/images/validation"
 
     if chosen_class == 'random' :
         chosen_class = random.choice(class_names)
