@@ -1,7 +1,7 @@
-from tensorflow.keras.preprocessing.image import ImageDataGenerator, load_img
-from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Dropout
-from tensorflow.keras.callbacks import EarlyStopping
-from tensorflow.keras import Sequential
+from keras.preprocessing.image import ImageDataGenerator
+from keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Dropout
+from keras.callbacks import EarlyStopping
+from keras import Sequential
 
 
 train_datagen = ImageDataGenerator(rescale=1. / 255,
