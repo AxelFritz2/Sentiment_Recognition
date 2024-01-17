@@ -13,6 +13,4 @@ RUN apt-get update && \
 
 RUN bash ./install.sh
 
-RUN export LD_LIBRARY_PATH=./venv/lib:$LD_LIBRARY_PATH
-
 CMD bash main.sh
