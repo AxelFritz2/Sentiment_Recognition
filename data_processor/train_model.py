@@ -14,7 +14,7 @@ train_datagen = ImageDataGenerator(rescale=1. / 255,
 
 test_datagen = ImageDataGenerator(rescale=1. / 255)
 
-training_set = train_datagen.flow_from_directory(directory='../data/face-expression-recognition-dataset/images/train',
+training_set = train_datagen.flow_from_directory(directory='./data/face-expression-recognition-dataset/images/train',
                                               target_size=(48, 48),
                                               class_mode='categorical',
                                               batch_size=32,
@@ -22,7 +22,7 @@ training_set = train_datagen.flow_from_directory(directory='../data/face-express
                                                        'Happy', 'Neutral', 'Sad',
                                                        'Surprise'])
 
-test_set = test_datagen.flow_from_directory(directory='../data/face-expression-recognition-dataset/images/validation',
+test_set = test_datagen.flow_from_directory(directory='./data/face-expression-recognition-dataset/images/validation',
                                             target_size=(48, 48),
                                             class_mode='categorical',
                                             batch_size=32,
