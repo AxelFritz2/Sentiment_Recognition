@@ -20,10 +20,15 @@ Pour exécuter l'application, il faut créer un docker à partir du dockerfile. 
     git clone https://github.com/AxelFritz2/Sentiment_Recognition.git
     ```
 
-2. Créer l'image Docker :
+2. Accéder au répertoire : 
+    ```bash
+    cd Sentiment_Recognition
+    ```
+
+3. Créer l'image Docker :
 
     ```bash
-    Docker build -t application:latest .
+    docker build -t application:latest .
     ```
 
 En créant l'image docker, un environnement virtuel va se créer et les dépendances vont se télécharger directement. 
@@ -32,7 +37,7 @@ En créant l'image docker, un environnement virtuel va se créer et les dépenda
 Pour lancer l'application, il vous suffit de lancer la commande Docker run :
 
 ```bash
-Docker run application 
+docker run application 
 ```
 
 Cette commande va effectuer les tâches suivantes : 
@@ -45,4 +50,3 @@ Vous pourrez ainsi lancer l'application via l'url fourni.
 ## Remarques
 
 - La fonctionnalité de détection de sentiment peut ne pas fonctionner. Cette dernière est encore en cours développement. 
-- 
