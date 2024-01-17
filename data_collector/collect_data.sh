@@ -7,5 +7,6 @@ source ./venv/bin/activate
 python3 ./data_collector/collect.py
 
 mkdir "data"
-mv face-expression-recognition-dataset data
 chmod 777 data
+
+mv face-expression-recognition-dataset data
