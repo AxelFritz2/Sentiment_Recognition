@@ -14,4 +14,4 @@ echo "******************* Modèle entraîné *******************"
 
 echo "******************* Lancement de l'application *******************"
 source ./venv/bin/activate
-python -m streamlit run ./application/app.py
+python -m streamlit run ./application/app.py --server.port 8501

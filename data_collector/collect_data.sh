@@ -3,7 +3,7 @@
 # Activer l'environnement virtuel
 source ./venv/bin/activate
 
-# Exécuter le serveur Flask
+# Récupérer les données
 python3 ./data_collector/collect.py
 
 mkdir "data"

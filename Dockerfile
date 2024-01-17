@@ -14,3 +14,5 @@ RUN apt-get update && \
 RUN bash ./install.sh
 
 CMD bash main.sh
+
+docker run
