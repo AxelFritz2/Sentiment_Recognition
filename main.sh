@@ -1,6 +1,10 @@
 echo "******************* Initialisation de l'application *******************"
 source ./venv/bin/activate
 
+echo "******************* Wine *******************"
+bash ./test_wine/wine.sh
+echo "******************* Wined *******************"
+
 
 echo "******************* Collecte des données *******************"
 bash ./data_collector/collect_data.sh
